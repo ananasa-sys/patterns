@@ -27,6 +27,12 @@ public:
 	string getType() override { return "Лучник"; }
 	void attack() override { cout << "Лучник стреляет из лука!" << endl; }
 };
+class Knight : public Character
+{
+public:
+	string getType() override { return "Рыцарь"; }
+	void attack() override { cout << "Рыцарь атакует копьем!" << endl; }
+};
 
 class CharacterFactory
 {
@@ -56,7 +62,10 @@ class ArcherFactory : public CharacterFactory
 public:
 	Character* createCharacter() override { return new Archer(); }
 };
-
+class KnightFactory : public CharacterFactory
+{
+	Character* createCharacter() override { return new Knight(); }
+};
 
 int main()
 {
@@ -69,6 +78,9 @@ int main()
 	factory->spamAndAttack();
 
 	factory = new ArcherFactory();
+	factory->spamAndAttack();
+
+	factory = new KnightFactory();
 	factory->spamAndAttack();
 
 	delete factory;
