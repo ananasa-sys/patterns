@@ -9,6 +9,7 @@ public:
 	void openFile(const string& file) { cout << "Открываем файл: " << file << endl; }
 	void shutDown() { cout << "Выключаем компьютер: " << endl; }
 	void launchBrowser() { cout << "Запускаем браузер: " << endl; }
+	void restart() { cout << "Перезагружаем компьютер: " << endl; }
 };
 
 class Command
@@ -70,6 +71,16 @@ public:
 	}
 };
 
+class RestartCommand : public Command
+{
+private:
+	ComputerSystem* system;
+public:
+	RestartCommand(ComputerSystem* s) : system(s) {}
+	void execute() override { system->restart(); }
+	void undo() override { cout << "Отмена: Выключаем перезагрузку" << endl; }
+};
+
 int main()
 {
 	setlocale(LC_ALL, "ru");
@@ -79,11 +90,13 @@ int main()
 	Command* openCmd = new OpenFileCommand(&system, "document.txt");
 	Command* shutdownCmd = new ShutDownCommand(&system);
 	Command* browserCmd = new LaunchBrowserCommand(&system);
+	Command* restartCmd = new RestartCommand(&system);
 
 	RemoteControl remote;
 	remote.addCommand(openCmd);
 	remote.addCommand(browserCmd);
 	remote.addCommand(shutdownCmd);
+	remote.addCommand(restartCmd);
 
 	remote.pressButton();
 
@@ -92,5 +105,6 @@ int main()
 	delete openCmd;
 	delete shutdownCmd;
 	delete browserCmd;
+	delete restartCmd;
 }
 
