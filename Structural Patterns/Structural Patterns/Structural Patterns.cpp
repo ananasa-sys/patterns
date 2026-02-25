@@ -16,6 +16,12 @@ public:
 	double cost() override { return 1.99; }
 };
 
+class Tea : public Beverage
+{
+public:
+	string getDescription() override { return "Чай"; }
+	double cost() override { return 1.50; }
+};
 
 class CondinentDecorator : public Beverage
 {
@@ -51,6 +57,14 @@ public:
 	double cost() override { return beverage->cost() + 0.10; }
 };
 
+class Chocolate : public CondinentDecorator
+{
+public:
+	Chocolate(Beverage* b) : CondinentDecorator(b) {}
+	string getDescription() override { return beverage->getDescription() + ", Шоколад"; }
+	double cost() override { return beverage->cost() + 0.20; }
+};
+
 int main()
 {
 	setlocale(LC_ALL, "ru");
@@ -59,13 +73,30 @@ int main()
 	drink = new Milk(drink);
 	drink = new Sugar(drink);
 	drink = new Syrup(drink);
+	drink = new Chocolate(drink);
 
 	cout << drink->getDescription() << " стоит $" << drink->cost() << endl;
 
 	Beverage* simpledrink = new Espresso();
-	cout << drink->getDescription() << " стоит $" << simpledrink->cost() << endl;
+	cout << simpledrink->getDescription() << " стоит $" << simpledrink->cost() << endl;
+
+	Beverage* newdrink = new Espresso();
+	newdrink = new Milk(newdrink);
+	newdrink = new Sugar(newdrink);
+	newdrink = new Chocolate(newdrink);
+
+	cout << newdrink->getDescription() << " стоит $" << newdrink->cost() << endl;
+
+	Beverage* teadrink = new Tea();
+	teadrink = new Milk(teadrink);
+	teadrink = new Syrup(teadrink);
+
+	cout << teadrink->getDescription() << " стоит $" << teadrink->cost() << endl;
 
 	delete drink;
 	delete simpledrink;
+	delete newdrink;
+	delete teadrink;
+
 }
 
