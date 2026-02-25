@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\klg\\Desktop\\patterns\\Behavioral Patterns\\Behavioral Patterns\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BF015DA8-6E05-48A4-ADFF-1E5523053E8A}|Behavioral Patterns.vcxproj|C:\\Users\\klg\\Desktop\\patterns\\Behavioral Patterns\\Behavioral Patterns\\Behavioral Patterns.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BF015DA8-6E05-48A4-ADFF-1E5523053E8A}|Behavioral Patterns.vcxproj|solutionrelative:Behavioral Patterns.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Behavioral Patterns.cpp",
+              "DocumentMoniker": "C:\\Users\\klg\\Desktop\\patterns\\Behavioral Patterns\\Behavioral Patterns\\Behavioral Patterns.cpp",
+              "RelativeDocumentMoniker": "Behavioral Patterns.cpp",
+              "ToolTip": "C:\\Users\\klg\\Desktop\\patterns\\Behavioral Patterns\\Behavioral Patterns\\Behavioral Patterns.cpp",
+              "RelativeToolTip": "Behavioral Patterns.cpp",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-25T13:33:33.035Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
