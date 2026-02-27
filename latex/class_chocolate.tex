@@ -1,0 +1,91 @@
+\doxysection{Chocolate}
+\hypertarget{class_chocolate}{}\label{class_chocolate}\index{Chocolate@{Chocolate}}
+Inheritance diagram for Chocolate:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_chocolate}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_chocolate_a99aca48a9f70d7ef93945acdea0e91cb}{Chocolate}} (\doxymbox{\hyperlink{class_beverage}{Beverage}} \texorpdfstring{$\ast$}{*}b)
+\begin{DoxyCompactList}\small\item\em Конструктор декоратора шоколада Указатель на напиток, в который добавляем шоколад \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_chocolate_ab87567e608eb40925dd8bbfa12d2a803}{cost}} () override
+\begin{DoxyCompactList}\small\item\em Функция для получения стоимости напитка с шоколадом \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_chocolate_abdeb5f80781f4787adb8f1a2fc8bb9f2}{get\+Description}} () override
+\begin{DoxyCompactList}\small\item\em Функция для получения описания напитка с шоколадом \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_condinent_decorator}{Condinent\+Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_condinent_decorator_a3e438c11527c47bb8305848514e23b50}{Condinent\+Decorator}} (\doxymbox{\hyperlink{class_beverage}{Beverage}} \texorpdfstring{$\ast$}{*}b)
+\begin{DoxyCompactList}\small\item\em Конструктор декоратора Указатель на напиток, который нужно декорировать \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_condinent_decorator_ab87567e608eb40925dd8bbfa12d2a803}{cost}} () override
+\begin{DoxyCompactList}\small\item\em Функция для получения стоимости напитка с добавками \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_condinent_decorator_abdeb5f80781f4787adb8f1a2fc8bb9f2}{get\+Description}} () override
+\begin{DoxyCompactList}\small\item\em Функция для получения описания напитка с добавками \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_condinent_decorator}{Condinent\+Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_beverage}{Beverage}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_condinent_decorator_a260f0eb42b771367652c34fcc5bf509b}{beverage}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_chocolate_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_chocolate_a99aca48a9f70d7ef93945acdea0e91cb}\index{Chocolate@{Chocolate}!Chocolate@{Chocolate}}
+\index{Chocolate@{Chocolate}!Chocolate@{Chocolate}}
+\doxysubsubsection{\texorpdfstring{Chocolate()}{Chocolate()}}
+{\footnotesize\ttfamily \label{class_chocolate_a99aca48a9f70d7ef93945acdea0e91cb} 
+\doxymbox{\hyperlink{class_chocolate}{Chocolate}} (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_beverage}{Beverage}} \texorpdfstring{$\ast$}{*}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор декоратора шоколада Указатель на напиток, в который добавляем шоколад 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_chocolate_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_chocolate_ab87567e608eb40925dd8bbfa12d2a803}\index{Chocolate@{Chocolate}!cost@{cost}}
+\index{cost@{cost}!Chocolate@{Chocolate}}
+\doxysubsubsection{\texorpdfstring{cost()}{cost()}}
+{\footnotesize\ttfamily \label{class_chocolate_ab87567e608eb40925dd8bbfa12d2a803} 
+double cost (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Функция для получения стоимости напитка с шоколадом 
+
+\begin{DoxyReturn}{Returns}
+double -\/ общую стоимость с учетом добавки 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_beverage_a86c26ee5c86d103ef58ec20cdf8f8fe2}{Beverage}}.
+
+\Hypertarget{class_chocolate_abdeb5f80781f4787adb8f1a2fc8bb9f2}\index{Chocolate@{Chocolate}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!Chocolate@{Chocolate}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily \label{class_chocolate_abdeb5f80781f4787adb8f1a2fc8bb9f2} 
+string get\+Description (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Функция для получения описания напитка с шоколадом 
+
+\begin{DoxyReturn}{Returns}
+string -\/ строку с описанием 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_beverage_a6c34b7e1fa2971da84d621a4306c5370}{Beverage}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Structural Patterns/\+\+Structural Patterns/\+\doxymbox{\hyperlink{_structural_01_patterns_8cpp}{Structural Patterns.\+cpp}}\end{DoxyCompactItemize}

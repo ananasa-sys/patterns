@@ -1,0 +1,108 @@
+\doxysection{Condinent\+Decorator}
+\hypertarget{class_condinent_decorator}{}\label{class_condinent_decorator}\index{CondinentDecorator@{CondinentDecorator}}
+
+
+Декоратор для добавок к напиткам  
+
+
+Inheritance diagram for Condinent\+Decorator:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_condinent_decorator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_condinent_decorator_a3e438c11527c47bb8305848514e23b50}{Condinent\+Decorator}} (\doxymbox{\hyperlink{class_beverage}{Beverage}} \texorpdfstring{$\ast$}{*}b)
+\begin{DoxyCompactList}\small\item\em Конструктор декоратора Указатель на напиток, который нужно декорировать \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_condinent_decorator_ab87567e608eb40925dd8bbfa12d2a803}{cost}} () override
+\begin{DoxyCompactList}\small\item\em Функция для получения стоимости напитка с добавками \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_condinent_decorator_abdeb5f80781f4787adb8f1a2fc8bb9f2}{get\+Description}} () override
+\begin{DoxyCompactList}\small\item\em Функция для получения описания напитка с добавками \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_beverage}{Beverage}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_condinent_decorator_a260f0eb42b771367652c34fcc5bf509b}{beverage}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Декоратор для добавок к напиткам 
+
+\label{doc-constructors}
+\Hypertarget{class_condinent_decorator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_condinent_decorator_a3e438c11527c47bb8305848514e23b50}\index{CondinentDecorator@{CondinentDecorator}!CondinentDecorator@{CondinentDecorator}}
+\index{CondinentDecorator@{CondinentDecorator}!CondinentDecorator@{CondinentDecorator}}
+\doxysubsubsection{\texorpdfstring{CondinentDecorator()}{CondinentDecorator()}}
+{\footnotesize\ttfamily \label{class_condinent_decorator_a3e438c11527c47bb8305848514e23b50} 
+\doxymbox{\hyperlink{class_condinent_decorator}{Condinent\+Decorator}} (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_beverage}{Beverage}} \texorpdfstring{$\ast$}{*}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор декоратора Указатель на напиток, который нужно декорировать 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_condinent_decorator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_condinent_decorator_ab87567e608eb40925dd8bbfa12d2a803}\index{CondinentDecorator@{CondinentDecorator}!cost@{cost}}
+\index{cost@{cost}!CondinentDecorator@{CondinentDecorator}}
+\doxysubsubsection{\texorpdfstring{cost()}{cost()}}
+{\footnotesize\ttfamily \label{class_condinent_decorator_ab87567e608eb40925dd8bbfa12d2a803} 
+double cost (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Функция для получения стоимости напитка с добавками 
+
+\begin{DoxyReturn}{Returns}
+double -\/ общую стоимость 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_beverage_a86c26ee5c86d103ef58ec20cdf8f8fe2}{Beverage}}.
+
+
+
+Reimplemented in \doxymbox{\hyperlink{class_milk_ab87567e608eb40925dd8bbfa12d2a803}{Milk}}, \doxymbox{\hyperlink{class_sugar_ab87567e608eb40925dd8bbfa12d2a803}{Sugar}}, and \doxymbox{\hyperlink{class_syrup_ab87567e608eb40925dd8bbfa12d2a803}{Syrup}}.
+
+\Hypertarget{class_condinent_decorator_abdeb5f80781f4787adb8f1a2fc8bb9f2}\index{CondinentDecorator@{CondinentDecorator}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!CondinentDecorator@{CondinentDecorator}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily \label{class_condinent_decorator_abdeb5f80781f4787adb8f1a2fc8bb9f2} 
+string get\+Description (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Функция для получения описания напитка с добавками 
+
+\begin{DoxyReturn}{Returns}
+string -\/ строку с описанием 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_beverage_a6c34b7e1fa2971da84d621a4306c5370}{Beverage}}.
+
+
+
+Reimplemented in \doxymbox{\hyperlink{class_milk_abdeb5f80781f4787adb8f1a2fc8bb9f2}{Milk}}, \doxymbox{\hyperlink{class_sugar_abdeb5f80781f4787adb8f1a2fc8bb9f2}{Sugar}}, and \doxymbox{\hyperlink{class_syrup_abdeb5f80781f4787adb8f1a2fc8bb9f2}{Syrup}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_condinent_decorator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_condinent_decorator_a260f0eb42b771367652c34fcc5bf509b}\index{CondinentDecorator@{CondinentDecorator}!beverage@{beverage}}
+\index{beverage@{beverage}!CondinentDecorator@{CondinentDecorator}}
+\doxysubsubsection{\texorpdfstring{beverage}{beverage}}
+{\footnotesize\ttfamily \label{class_condinent_decorator_a260f0eb42b771367652c34fcc5bf509b} 
+\doxymbox{\hyperlink{class_beverage}{Beverage}}\texorpdfstring{$\ast$}{*} beverage\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Structural Patterns/\+\+Structural Patterns/\+\doxymbox{\hyperlink{_structural_01_patterns_8cpp}{Structural Patterns.\+cpp}}\end{DoxyCompactItemize}
